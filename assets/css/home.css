@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    color: gray
+}
+
+.item-block{
+    position: relative;
+    /* border: 2px solid black; */
+    width: 40%;
+    left: 30%;
+}
+
+.item-list{
+    list-style: none;
+}
+
+.item-list{
+    /* border: 2px solid black; */
+    height: 40px;
+    margin-right: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bolder;
+}
+
+.item-list p{
+    position: relative;
+    left: 3%;
+}
+
+.item-list li:hover{
+    background-color: gray;
+}
+
+.item-details{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.delete-btn{
+    position: relative;
+    width: 5%;
+    /* border: 2px solid black; */
+    margin-top: -40px;
+    right: -90%;
+}
+
+.contact-form{
+    /* border: 2px solid black; */
+    width: 50%;
+    position: relative;
+    text-align: center;
+    left: 25%;
+}
+
+.contact-form input{
+    border: none;
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.contact-form input:focus{
+    outline: none;
+}
+
+.contact-form button{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    border: none;
+}

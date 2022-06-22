@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <script src="https://kit.fontawesome.com/3219be7a00.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1>
+            <i class="fa-solid fa-address-book"></i>
+            My Contact List
+        </h1>
+        <div class="item-block">
+            <ul>
+                <% for(let i of contact_list){ %>
+                    <li class="item-list">
+                        <div class="item-details">
+                            <p class="name"> <%= i.ContactName %> </p>
+                            <p class="number"> <%= i.ContactNo %> </p>
+                        </div>
+                        <div class="delete-btn">
+                            <a href="/delete-contact/?phone=<%= i.ContactNo %>">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </a>
+                       </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+
+        <form action="/create-contact" method="POST" class="contact-form">
+            <input type="text" name="ContactName" placeholder="enter name" required>
+            <input type="text" name="ContactNo" placeholder="enter phone" required>
+            <button type="submit">Add contact</button>
+        </form>
+        <script src="/Users/bhavneetsingh/Desktop/VSCODE WEB-D/nodews/ContactList using Express.js/assets/js/home.js" type="text/javascript"></script>
+    </body>
+</html>
